@@ -15,7 +15,7 @@ public class CorsConfig{
                 @Override
                 public void addCorsMappings(CorsRegistry registry) {
                     registry.addMapping("/**")
-                            .allowedOrigins("https://frabjous-belekoy-4bc68d.netlify.app/")
+                            .allowedOrigins("https://singular-cajeta-a14474.netlify.app/")
                             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                             .allowedHeaders("*")
                             .exposedHeaders("Authorization")
@@ -24,5 +24,6 @@ public class CorsConfig{
             };
         }
 }
+
 
 
