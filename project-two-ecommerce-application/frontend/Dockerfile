@@ -1,44 +1,33 @@
-# frontend/Dockerfile
-
-# ----------------------------------------
-# 1. Build Stage (Creates the optimized assets)
-# ----------------------------------------
-# Use a Node image to handle installing dependencies and building the project
+# ---------- Build Stage ----------
 FROM node:18-alpine AS build
 
-# Set the working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy package manifests first to leverage Docker caching (if they haven't changed)
+# Copy dependency files
 COPY package*.json ./
 
-# Install dependencies (npm ci ensures consistent installs based on lock file)
-RUN npm ci
+# Install dependencies
+RUN npm install
 
-# Copy all source code into the container
+# Copy all source files
 COPY . .
 
-# Run the build script, which generates the production-ready static files in the /app/dist folder
+# Build the production-ready app
 RUN npm run build
 
-# ----------------------------------------
-# 2. Production Stage (Serves the static assets)
-# ----------------------------------------
-# Use a lightweight, stable Nginx image to serve the application
-FROM nginx:stable-alpine
 
-# Copy the built application files from the 'build' stage into the Nginx public folder
+# ---------- Run Stage ----------
+FROM nginx:alpine
+
+# Copy custom Nginx config (optional)
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy built files from the previous stage
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Optional: handle SPA routing (all requests to index.html)
-RUN rm /etc/nginx/conf.d/default.conf
-
-# Copy the built application files from the 'build' stage into the Nginx public folder
-COPY nginx.conf /etc/nginx/conf.d/nginx.conf
-
-# Nginx listens on port 80 by default
+# Expose port 80 (Nginx default)
 EXPOSE 80
 
-# The default command for the Nginx image runs the server
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
-
