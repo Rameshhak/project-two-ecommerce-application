@@ -4,7 +4,7 @@ const token = localStorage.getItem("token");
 
 // Create axios instance
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
+  baseURL: "http://project-two-ecommerce-application-backend-production.up.railway.app/api",
   //baseURL: "http://localhost:8080/api",
   headers: {
     "Content-Type": "application/json"
@@ -132,5 +132,6 @@ export const getCartCount = async () => {
 };
 
 export default api;
+
 
 
