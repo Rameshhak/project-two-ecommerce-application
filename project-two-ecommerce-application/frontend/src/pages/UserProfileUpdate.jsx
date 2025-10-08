@@ -24,7 +24,7 @@ function UserProfileUpdate() {
         if (!id) return; // safeguard
         const fetchUser = async () => {
             try {
-                const res = await api.get(`user/get-user/${id}`);
+                const res = await api.get(`/user/get-user/${id}`);
                 
                const data = res.data;
                 setUserFormData({
@@ -109,3 +109,4 @@ function UserProfileUpdate() {
 }
 
 export default UserProfileUpdate
+
