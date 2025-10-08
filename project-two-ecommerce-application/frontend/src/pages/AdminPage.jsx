@@ -47,7 +47,7 @@ function AdminPage() {
   
           // The fetch request logic
           try{
-             const url = `http://localhost:8080/api/products/create`;
+             const url = `http://project-two-ecommerce-application-backend-production.up.railway.app/api/products/create`;
              const response = await fetch(url, {
              method: 'POST',
              headers: {
@@ -133,3 +133,4 @@ function AdminPage() {
 };
 
 export default AdminPage
+
