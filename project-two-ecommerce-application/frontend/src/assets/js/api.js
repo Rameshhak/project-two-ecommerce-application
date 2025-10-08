@@ -4,7 +4,7 @@ const token = localStorage.getItem("token");
 
 // Create axios instance
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:8080/api",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   //baseURL: "http://localhost:8080/api",
   headers: {
     "Content-Type": "application/json"
@@ -24,7 +24,7 @@ api.interceptors.request.use((config) => {
 
 export const login = async (username, password) => {
   try {
-    const response = await axios.post("http://localhost:8080/api/auth/login", {
+    const response = await axios.post("http://project-two-ecommerce-application-backend-production.up.railway.app/api/auth/login", {
       username,
       password,
     });
@@ -132,4 +132,5 @@ export const getCartCount = async () => {
 };
 
 export default api;
+
 
