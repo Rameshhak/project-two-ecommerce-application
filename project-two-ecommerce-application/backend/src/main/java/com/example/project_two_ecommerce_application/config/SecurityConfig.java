@@ -82,11 +82,10 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         // Match the settings from your previous CorsConfig
-        configuration.setAllowedOrigins(List.of("http://localhost:5173"));
+        configuration.setAllowedOrigins(List.of("https://frabjous-belekoy-4bc68d.netlify.app/"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         // allow the common headers and the Authorization header
         configuration.setAllowedHeaders(List.of("Authorization", "Content-Type", "Accept"));
-        // configuration.setAllowedHeaders(List.of("*"));
         // expose Authorization header if you send it back (not always required)
         configuration.setExposedHeaders(List.of("Authorization"));
         configuration.setAllowCredentials(true);
@@ -94,8 +93,8 @@ public class SecurityConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         // apply global CORS to everything
         source.registerCorsConfiguration("/**", configuration);
-        //source.registerCorsConfiguration("/api/**", configuration); // Apply to all /api endpoints
         return source;
     }
 
 }
+
