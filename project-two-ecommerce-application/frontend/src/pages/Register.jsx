@@ -39,7 +39,7 @@ function Register() {
 
         // The fetch request logic
         try{
-           const response = await fetch(`http://localhost:8080/api/user/register`, {
+           const response = await fetch(`http://project-two-ecommerce-application-backend-production.up.railway.app/api/user/register`, {
            method: 'POST',
            headers: {
               'Content-Type': 'application/json'
@@ -117,3 +117,4 @@ function Register() {
 }
 
 export default Register
+
