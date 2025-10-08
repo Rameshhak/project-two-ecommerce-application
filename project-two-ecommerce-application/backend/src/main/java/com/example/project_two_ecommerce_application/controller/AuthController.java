@@ -22,7 +22,7 @@ import java.util.Map;
 @AllArgsConstructor
 @Tag(name = "AuthenticationController",
         description = "Manage the authentication process to log in the user.")
-@CrossOrigin(origins="http://localhost:5173", allowCredentials="true")
+@CrossOrigin(origins="https://frabjous-belekoy-4bc68d.netlify.app/", allowCredentials="true")
 public class AuthController {
 
     private AuthenticationManager authenticationManager;
@@ -75,3 +75,4 @@ public class AuthController {
     }
 
 }
+
