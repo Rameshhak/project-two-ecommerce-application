@@ -1,0 +1,104 @@
+body{
+    background-color: white;
+}
+.log-page_logo{
+    width: 140px;
+    position: absolute;
+    top: 100px;
+    left: 45%;
+    margin-bottom: 20px;
+}
+.container_inside_box{
+    position: absolute;
+    left: 40%;
+    top: 90px;
+    border: 1px solid black;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+.log-title_name{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    color: black;
+}
+.log-n-label, .log-p-label{
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px 0px 6px 4px;
+}
+.log-n-input, .log-p-input{
+    font-size: 17px;
+    padding: 5px 10px;
+    border: none;
+    margin-bottom: 8px;
+    color: #202027;
+    border-radius: 3px;
+    width: 90%;
+    background-color: white;
+    border: 1px solid black;
+}
+.log-n-input:focus, .log-p-input:focus{
+box-shadow: -1px -1px 3px 0px #bdccd8, 1px 1px 3px 0px #bdccd8;
+}
+.log-submit-btn{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    background-color: #F5B027;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    color: #181818;
+    letter-spacing: 0.75px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.log-info-msg{
+    display: none;
+    background-color: #40a829;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 2px;
+    margin: 410px 650px;
+}
+
+@media only screen and (max-width: 600px) {
+  .log-page_logo{
+    width: 140px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.container_inside_box{
+    position: absolute;
+    left: 45%;
+    top: 90px;
+    border: 1px solid black;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+}
+@media only screen and (max-width: 300px) {
+    .log-page_logo{
+    width: 140px;
+    position: absolute;
+    top: 30px;
+    left: 45%;
+    margin-bottom: 20px;
+}
+.container_inside_box{
+    position: absolute;
+    left: 2%;
+    top: 90px;
+    border: 1px solid black;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+}

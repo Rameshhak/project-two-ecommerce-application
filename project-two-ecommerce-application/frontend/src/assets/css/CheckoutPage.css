@@ -1,0 +1,107 @@
+
+.checkout-page-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 70px !important;
+}
+
+.checkout-shipping-info {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.checkout-shipping-info h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #C45500; 
+    margin-bottom: 15px;
+}
+
+.checkout-shipping-info p {
+    margin: 10px 0;
+    color: #111;
+}
+
+.change-btn {
+    background: none;
+    border: none;
+    color: #007185;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.change-btn:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* --- Summary Box Styling (Right Column) --- */
+
+.checkout-summary-box {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    height: fit-content;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.summary-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.summary-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: #B12704;
+    margin-top: 15px;
+}
+
+.place-order-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #FE8B00;
+    border-radius: 8px;
+    background-color: #FFA41C;
+    color: #111;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.place-order-btn:hover {
+    background-color: #FA8900;
+}
+
+.agreement-text {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+.delete-confirm-container{
+    margin-top: 70px;
+}
+.d-c-text{
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+}
+.d-c-delete-btn{
+    background-color: rgb(244, 67, 54);
+    color: white;
+    margin-right: 10px;
+    padding: 6px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.d-c-cancel-btn{
+    padding: 6px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}

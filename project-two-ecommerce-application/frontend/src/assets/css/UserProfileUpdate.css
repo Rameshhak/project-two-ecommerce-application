@@ -1,0 +1,75 @@
+body{
+    background-color: white;
+}
+.e-user-container{
+    position: absolute;
+    left: 27%;
+    top: 120px !important;
+    border: 1px solid black;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+.e-user-sub-title{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 0.75px;
+}
+.e-user-id-label,.e-user-n-label, .e-user-e-label, .e-user-p-label{
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    color: black !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    margin: 0px 0px 6px 4px;
+}
+.e-user-id-input,.e-user-n-input, .e-user-e-input, .e-user-p-input{
+    font-size: 17px;
+    padding: 5px 10px;
+    border: none;
+    margin-bottom: 8px;
+    color: #202027;
+    border-radius: 3px;
+    width: 90%;
+    background-color: white;
+    border: 1px solid black !important;
+}
+.e-user-n-input:focus, .e-user-e-input:focus, .e-user-p-input:focus{
+box-shadow: -1px -1px 3px 0px #bdccd8, 1px 1px 3px 0px #bdccd8;
+}
+.role_info{
+    font-size: 18px;
+    display: inline;
+    margin: 8px 12px 8px 0px;
+    color: black;
+    font-weight: 600;
+}
+.select_head{
+    font-size: 16px;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.e-user-submit-button{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    background-color: #F5B027;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    color: #181818;
+    letter-spacing: 0.75px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.reg-info_msg{
+    text-align: center;
+    border-radius: 2px;
+    color: green;
+    font-size: 20px;
+    padding: 6px 12px;
+    margin: 380px 0px 0px 0px;
+}

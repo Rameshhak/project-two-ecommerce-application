@@ -1,0 +1,122 @@
+/* Styling for the Cart Page (two-column layout) */
+.cart-page-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    margin-top: 70px !important;
+}
+
+.cart-main {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.cart-summary {
+    flex: 1; 
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    height: fit-content; 
+}
+
+.cart-title {
+    font-size: 28px;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.empty-cart-message {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* --- Cart Item Styling --- */
+.cart-item-card {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-name {
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.cart-item-price {
+    color: #B12704;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cart-action-btn {
+    background: none;
+    border: none;
+    color: #007185;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.cart-action-btn:hover {
+    text-decoration: underline;
+}
+
+.cart-item-separator {
+    color: #ccc;
+}
+
+/* --- Summary Box Styling --- */
+.subtotal-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.subtotal-amount {
+    font-weight: bold;
+    color: #B12704;
+    font-size: 1.2em;
+}
+
+.proceed-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFD814; /* Amazon yellow */
+    color: #111;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.proceed-btn:hover:not(:disabled) {
+    background-color: #F7CA00;
+}
+
+.proceed-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

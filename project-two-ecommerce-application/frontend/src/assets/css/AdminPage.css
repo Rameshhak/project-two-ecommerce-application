@@ -1,0 +1,105 @@
+.content_box{
+    width: 700px;
+    position: absolute;
+    left: 26%;
+    top: 140px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.admin_page_title{
+    color: black;
+    margin-top: 74px;
+    text-align: center;
+    font-size: 30px;
+}
+.left_box{
+    margin: 35px 0px 20px 20px;
+    background-color: #131921;
+    border-radius: 12px 0px 0px 12px;
+}
+.subtitle_box{
+    margin-top: 30px;
+    border-bottom: 1px solid white;
+}
+.ad_sub_title{
+    font-size: 28px;
+    font-weight: 800;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.sub_img{
+    width: 30px;
+    margin: -5px 3px;
+    background-color: white;
+    border-radius: 6px;
+}
+.ad_p_name_box, .ad_p_price_box, .ad_p_description_box{
+    margin-top: 12px;
+}
+.ad-n-label, .ad-p-label, .ad-d-label{
+    color: white;
+    font-size: 18px;
+    margin: 10px 0px 6px 20px;
+    font-weight: 700;
+}
+.ad-n-input, .ad-p-input{
+    font-size: 20px;
+    padding: 6px 10px;
+    border: none;
+    margin-inline: 18px;
+    width: 89%;
+    border-radius: 4px;
+}
+.ad-d-input{
+    font-size: 20px;
+    padding: 6px 10px;
+    border: none;
+    margin-inline: 18px;
+    width: 89%;
+    border-radius: 4px;
+}
+.ad-submit-btn{
+    font-size: 20px;
+    padding: 8px 24px;
+    margin: 30px 17px 32px 17px;
+    width: 93%;
+    border-radius: 6px;
+    border: none;
+}
+.right_box{
+    background-color: #EFEEEA;
+    margin: 35px 0px 20px 0px;
+    border: 1px solid #131921;
+    border-radius: 0px 12px 12px 0px;
+}
+.right_side_img{
+    width: 160px;
+    margin-top: 45%;
+    margin-inline: 24px;
+}
+.edit_btn{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 10px;
+    margin-inline: 18px;
+    background-color: #706C61;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.edit_btn:hover{
+    background-color: #333333;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 10px;
+}
+.ad-_info_msg{
+    text-align: center;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 2px;
+    margin: 460px 650px;
+}
